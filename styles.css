@@ -1,0 +1,125 @@
+/* General Footer Styling */
+footer {
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #2BD7B1;
+}
+
+/* Consultation Section */
+footer .consultation-section {
+    background-color: #2BD7B1;
+    padding: 15px 20px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .consultation-section div {
+    flex: 1;
+    margin-bottom: 15px;
+}
+
+footer .consultation-section h2 {
+    margin: 5px 0;
+    font-size: 1.6em;
+}
+
+footer .consultation-section a.contact-button {
+    color: white;
+    background-color: #1469FF;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+footer .consultation-section a.contact-button:hover {
+    background-color: #004CBF;
+}
+
+/* Footer Content Section */
+.footer {
+    padding: 40px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer .footer-item h4 {
+    color: #2BD7B1;
+    margin-bottom: 20px;
+}
+
+.footer .footer-item p {
+    line-height: 1.5;
+    color: #CCCCCC;
+}
+
+.footer .footer-item .social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background-color: #1469FF;
+    border-radius: 50%;
+    color: white;
+    margin-right: 10px;
+}
+
+.footer .footer-item .social-icons a:hover {
+    background-color: #2BD7B1;
+}
+
+/* Contact Information */
+.footer .contact-info .d-flex {
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.footer .contact-info i {
+    font-size: 1.3em;
+    color: #2BD7B1;
+    margin-right: 10px;
+}
+
+.footer .contact-info a {
+    color: #CCCCCC;
+    text-decoration: none;
+}
+
+.footer .contact-info a:hover {
+    color: #2BD7B1;
+}
+
+/* Copyright Section */
+footer .copyright {
+    background-color: #111;
+    color: #CCCCCC;
+    padding: 15px 0;
+    text-align: center;
+}
+
+footer .copyright i {
+    color: #2BD7B1;
+    margin-right: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    footer .consultation-section {
+        flex-direction: column;
+    }
+
+    .footer .row .col-md-6 {
+        margin-bottom: 20px;
+    }
+}
