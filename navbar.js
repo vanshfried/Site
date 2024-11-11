@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Navbar HTML as a string
-    const navbarHTML = `
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  // Navbar HTML as a string
+  const navbarHTML = `
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Krishrad Innovations</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,27 +71,27 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
       </div>
     </nav>
-    `;
+  `;
 
-    // Injecting the navbar into the page
-    document.getElementById('navbar-container').innerHTML = navbarHTML;
+  // Injecting the navbar into the page
+  document.getElementById('navbar-container').innerHTML = navbarHTML;
 
-    // Adding hover effect to dropdown items for the Services menu
-    document.querySelectorAll('.nav-item.dropdown').forEach(function(dropdown) {
-        dropdown.addEventListener('mouseenter', function() {
-          const menu = dropdown.querySelector('.dropdown-menu');
-          menu.style.display = 'block'; // Show menu
-          setTimeout(() => {
-            menu.classList.add('show');
-          }, 0);
-        });
-
-        dropdown.addEventListener('mouseleave', function() {
-          const menu = dropdown.querySelector('.dropdown-menu');
-          menu.classList.remove('show');
-          setTimeout(() => {
-            menu.style.display = 'none'; // Hide menu
-          }, 200); // Allow transition time for smooth closing
-        });
+  // Adding hover effect to dropdown items for the Services menu
+  document.querySelectorAll('.nav-item.dropdown').forEach(function(dropdown) {
+    dropdown.addEventListener('mouseenter', function() {
+      const menu = dropdown.querySelector('.dropdown-menu');
+      menu.style.display = 'block'; // Show menu
+      setTimeout(() => {
+        menu.classList.add('show');
+      }, 0);
     });
+
+    dropdown.addEventListener('mouseleave', function() {
+      const menu = dropdown.querySelector('.dropdown-menu');
+      menu.classList.remove('show');
+      setTimeout(() => {
+        menu.style.display = 'none'; // Hide menu
+      }, 200); // Allow transition time for smooth closing
+    });
+  });
 });
