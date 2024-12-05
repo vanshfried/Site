@@ -15,9 +15,9 @@ document.addEventListener('DOMContentLoaded', function(){
                 Contact Us →
             </a>
             <div style="text-align: center;">
-                <a href="tel:6005130753"><i class="fas fa-phone-alt" style="font-size: 1.4em; color: #1469FF;"></i></a>
+                <a href="tel:1234567890"><i class="fas fa-phone-alt" style="font-size: 1.4em; color: #1469FF;"></i></a>
                 <p style="margin: 0; font-weight: bold;">Helpline:</p>
-                <a href="tel:6005130753" style="text-decoration: none; color: black;">+91 6005130753</a>
+                <a href="tel:1234567890" style="text-decoration: none; color: black;">+91 1234567890</a>
             </div>
         </div>
     </div>
